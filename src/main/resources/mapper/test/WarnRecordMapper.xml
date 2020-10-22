@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.test.mapper.WarnRecordMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.demo.test.entity.WarnRecord">
+        <id column="id" property="id" />
+        <result column="terminal_Id" property="terminalId" />
+        <result column="car_number" property="carNumber" />
+        <result column="ys_name" property="ysName" />
+        <result column="warn_time" property="warnTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="warn_address" property="warnAddress" />
+        <result column="warn_type" property="warnType" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, terminal_Id, car_number, ys_name, warn_time, update_time, warn_address, warn_type
+    </sql>
+
+</mapper>
